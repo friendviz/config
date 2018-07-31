@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: friendviz
+spec:
+  rules:
+  - host: friendviz.cjblink1.pro
+    http:
+      paths:
+      - backend:
+          serviceName: friendviz
+          servicePort: 80
