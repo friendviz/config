@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: friendviz
 spec:
+  tls:
+    secretName: friendviz-certs
   rules:
   - host: friendviz.cjblink1.pro
     http:
