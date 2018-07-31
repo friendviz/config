@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: friendviz
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: friendviz
+    spec:
+      containers:
+        - name: friendviz
+          image: 'cjblink1/friendviz:c81609582712547b6b4f1ab9583f813db4d980a2'
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: friendviz-service
+  labels:
+    name: friendviz-service
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+  selector:
+    app: friendviz
+  type: ClusterIP
+
