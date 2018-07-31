@@ -8,5 +8,5 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: friendviz
+          serviceName: friendviz-service
           servicePort: 80
