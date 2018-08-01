@@ -9,4 +9,4 @@ spec:
       paths:
       - backend:
           serviceName: flux-service
-          servicePort: 3030
+          servicePort: 80
