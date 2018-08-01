@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: flux
+spec:
+  rules:
+  - host: flux.cjblink1.pro
+    http:
+      paths:
+      - backend:
+          serviceName: flux-service
+          servicePort: 3030
