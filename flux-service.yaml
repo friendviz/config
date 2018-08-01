@@ -10,5 +10,5 @@ spec:
       targetPort: 3030
       protocol: TCP
   selector:
-    app: friendviz
+    app: flux
   type: ClusterIP
