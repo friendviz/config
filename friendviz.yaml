@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: friendviz
-        image: 'cjblink1/friendviz:3b481a5e315d985c83726a0a2a75323e0a96d208'
+        image: 'cjblink1/friendviz:4f4532d815bbab43f2845aa0913b716ec766b5f4'
         ports:
         - containerPort: 80
 ---
